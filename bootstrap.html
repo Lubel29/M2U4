@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORIO DE ANALISIS CLINICOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>LABORATORIO LABBEL</h1>
+    <h2>Laboratorio de analisis clinicos</h2>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col" style="background: rgb(10,80,177); color:aliceblue;">
+                PACIENTES
+            </div>
+            <div class="col" style="background: rgb(55,113,180); color: aliceblue;">
+                DERIVACIONES
+            </div>
+            <div class="col" style="background: rgb(84,127,179); color: aliceblue;">
+                MEDICOS
+            </div>
+            <div class="row">
+                <div class="col-4" style="background:rgb(108, 184, 228) ">
+                    Resultados
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputdocumento" class="col-sm-1 col-form-label">DNI</label>
+                <div class="col-sm-3">
+                    <input type="Documento" class="form-control" id="inputDocumento">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="col-sm 9" style="background:rgb(108, 184, 228);">
+                    Determinaciones
+                </div>
+                <label for="exampleDataList" class="form-label">Buscar Determinacion</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                    placeholder="Escribir determinacion...">
+                <datalist id="datalistOptions">
+                    <option value="Carga viral de Hiv">
+                    <option value="HPV">
+                    <option value="Hemocultivo">
+                    <option value="Proteinograma">
+                </datalist>
+                <div class="row-cols-1">
+                    <button type="Search" class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+            <p>
+            <h3> HIV carga viral (ARN) - CVHIV</h3>
+            <div class="container text-center">
+                <p class="d-inline-flex gap-5">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                        aria-expanded="false" aria-controls="multiCollapseExample1">Toma de muestra</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Tipo de muestra</button>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                Tubo con EDTA
+                                Envíos mayores a 48hs: solicitar material
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            Plasma con EDTA (2,5 ml)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 20rem;">
+                <img src="OIP.jpeg" class="row" alt="ADN">
+                <h5 class="card-title">Biologia molecular</h5>
+                <p class="card-text">Nuevo sector de Biologia molecular para procesar muestras de ARN/ADN
+                </p>
+                <a href="#" class="btn btn-primary">Más informacion</a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4" style="background:rgb(185, 205, 214)">
+                <div class="col">
+                    <div class="card">
+                        <img src="material-laboratorio.jpg" class="card-img-top" alt="Material laboratorio">
+                        <div class="card-body">
+                            <h5 class="card-title">Venta de reactivos y kits </h5>
+                            <p class="card-text">Contáctese con un asesor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="laboratorio.jpg" class="card-img-top" alt="Materiales">
+                        <div class="card-body">
+                            <h5 class="card-title">Venta de materiales</h5>
+                            <p class="card-text">Somos especialista en Materiales de alta calidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-cols-md-4 g-4 ">
+            <div class="col" style="background: rgb(140,159,182); color:aliceblue">
+                Preguntas frecuentes
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿Cuanto tiempo tardan en darme un resultado?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"> Esto dependerá segun la determinacion que usted se haya
+                            realizado
+                            <code></code>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿Como solicitar un turno?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"> Contactandose por mail o llamando a nuestro numero telefonico
+                            <code></code>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            ¿Cuantas horas de ayuno necesito?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Dependerá del tipo de determinación que vaya a
+                            realizarse.<code></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" style="background: rgb(165, 175, 187); color:aliceblue">
+                Contacto
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Whataspp asesor 1140562145</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
